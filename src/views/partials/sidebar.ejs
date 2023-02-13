@@ -1,0 +1,21 @@
+<aside class="">
+    <nav>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+
+            <% if('user' in locals) { %>
+
+                <li>
+                    <%= locals.user %>
+                </li>
+
+
+                <% } else { %>
+                    <li><a href="/login">Entrar</a></li>
+                    <% } %>
+
+        </ul>
+
+    </nav>
+</aside>

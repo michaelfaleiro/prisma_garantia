@@ -1,0 +1,32 @@
+<%- include('../../partials/header.ejs') %>
+
+    <body>
+        <div class="container-fluid text-center min-vh-100">
+            <div class="row">
+                <div class="col bg-secondary">
+                    <div>
+                        <img src="./assets/logo.png" alt="Logo Carfy">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-lg-1">
+                    <%- include('../../partials/sidebar.ejs') %>
+                </div>
+                <main class="col col-lg-11 min-vh-100">
+                    main
+                    <!-- <% if('user' in locals) { %>
+                        <h1>
+
+                            <%= locals.user %>
+                        </h1>
+                        <% } else { %>
+                            <h1>Falta logar</h1>
+                            <% } %> -->
+                </main>
+            </div>
+
+        </div>
+
+        <!--final Body-->
+        <%- include('../../partials/footer.ejs') %>
